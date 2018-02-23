@@ -12,11 +12,14 @@
 		5EC74D51202157F10029D027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC74D4F202157F10029D027 /* Main.storyboard */; };
 		5EC74D53202157F10029D027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EC74D52202157F10029D027 /* Assets.xcassets */; };
 		5EC74D56202157F10029D027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC74D54202157F10029D027 /* LaunchScreen.storyboard */; };
-		5EC74D9420215AD20029D027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC74D8620215AD20029D027 /* ViewController.swift */; };
 		5EC74D9A20215AD90029D027 /* EmoticonWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5EC74D9620215AD90029D027 /* EmoticonWeibo.bundle */; };
 		5EC74D9B20215AD90029D027 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EC74D9720215AD90029D027 /* test.json */; };
 		5EC74D9C20215AD90029D027 /* test2.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EC74D9820215AD90029D027 /* test2.json */; };
 		5EC74D9D20215AD90029D027 /* WeiboLinkType.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EC74D9920215AD90029D027 /* WeiboLinkType.plist */; };
+		5EC74D9F202198060029D027 /* SubmitTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC74D9E202198060029D027 /* SubmitTabBar.swift */; };
+		5EC74DA12022BBA70029D027 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC74DA02022BBA70029D027 /* MainTabBarController.swift */; };
+		5EC74DA3202414DA0029D027 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC74DA2202414DA0029D027 /* HomeViewController.swift */; };
+		5EC74DA5202414F00029D027 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC74DA4202414F00029D027 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +30,14 @@
 		5EC74D52202157F10029D027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EC74D55202157F10029D027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EC74D57202157F10029D027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5EC74D8620215AD20029D027 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5EC74D9620215AD90029D027 /* EmoticonWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmoticonWeibo.bundle; sourceTree = "<group>"; };
 		5EC74D9720215AD90029D027 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		5EC74D9820215AD90029D027 /* test2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test2.json; sourceTree = "<group>"; };
 		5EC74D9920215AD90029D027 /* WeiboLinkType.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = WeiboLinkType.plist; sourceTree = "<group>"; };
+		5EC74D9E202198060029D027 /* SubmitTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTabBar.swift; sourceTree = "<group>"; };
+		5EC74DA02022BBA70029D027 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		5EC74DA2202414DA0029D027 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5EC74DA4202414F00029D027 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FA52267BC3518F464B76187F /* Pods_SooLeWebo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SooLeWebo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE58115D4973C7463C77A464 /* Pods-SooLeWebo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SooLeWebo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SooLeWebo/Pods-SooLeWebo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -203,6 +209,7 @@
 		5EC74D7620215AD20029D027 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5EC74DA2202414DA0029D027 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -321,7 +328,8 @@
 			isa = PBXGroup;
 			children = (
 				5EC74D4F202157F10029D027 /* Main.storyboard */,
-				5EC74D8620215AD20029D027 /* ViewController.swift */,
+				5EC74DA02022BBA70029D027 /* MainTabBarController.swift */,
+				5EC74DA4202414F00029D027 /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -336,6 +344,7 @@
 		5EC74D8820215AD20029D027 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5EC74D9E202198060029D027 /* SubmitTabBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -583,7 +592,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EC74D9420215AD20029D027 /* ViewController.swift in Sources */,
+				5EC74DA5202414F00029D027 /* BaseViewController.swift in Sources */,
+				5EC74DA3202414DA0029D027 /* HomeViewController.swift in Sources */,
+				5EC74D9F202198060029D027 /* SubmitTabBar.swift in Sources */,
+				5EC74DA12022BBA70029D027 /* MainTabBarController.swift in Sources */,
 				5EC74D4C202157F10029D027 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
